@@ -2,3 +2,7 @@ user:
   name_max_length: 50
   email_max_length: 255
   password_min_length: 6
+  per_page: 10
+  avatar_max_size: 80
+  avatar_size: 50
+  avatar_url: "https://en.gravatar.com/userimage/122389688/b22d9e4c2ece9eb07732561028910ea8.jpeg"

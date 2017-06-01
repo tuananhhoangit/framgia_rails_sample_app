@@ -18,6 +18,8 @@ $nblack: #222;
 }
 
 body {
+  background-size: cover;
+  background: url("background.png") no-repeat fixed;
   padding-top: 60px;
 }
 
@@ -40,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: $navy !important;
+  color: white;
   font-size: 3em;
   font-weight: bold;
   letter-spacing: -2px;
@@ -108,17 +110,22 @@ p {
 }
 
 /* body */
-.main {
-  h1 {
-    color: $navy;
-  }
-  .desc h2 {
-    color: $navy;
-    .tut {
-      color: $lightblue;
-      &:hover {
-        color: $dpink;
-        text-decoration: none;
+main {
+  .jumbotron {
+    background-color: rgba(238,238,238,0.8);
+    margin: 0 auto;
+    padding: 48px 15px;
+    h1 {
+      color: $navy;
+    }
+    .desc h2 {
+      color: $navy;
+      .tut {
+        color: $lightblue;
+        &:hover {
+          color: $dpink;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -138,11 +145,69 @@ p {
     color: $navy;
     margin-top: 10px;
     a {
-      color: $lightblue;
+      color: white;
       text-decoration: none;
       &:hover {
         color: $dpink
       }
+    }
+  }
+  .avatar-edit {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    .edit-ava {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .btn-change {
+      bottom: 0;
+      left: 90px;
+      position: absolute;
+    }
+  }
+  .pagination {
+    a {
+      color: $navy;
+      &:hover {
+        background-color: $dpink;
+        color: white;
+      }
+    }
+    .active {
+      a {
+        background-color: $lightblue;
+        border: $lightblue;
+        color: white;
+        &:hover {
+          background-color: $dpink;
+        }
+      }
+    }
+  }
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $lightblue;
+    overflow: auto;
+    padding: 10px 0;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    .user-name {
+      display: block;
+      width: 30%;
+    }
+    .btn {
+      margin-top: 5px;
     }
   }
 }
@@ -225,56 +290,44 @@ input {
 /* footer */
 
 footer {
-  border-top: 1px solid $lightest-gray;
-  color: gray;
-  margin-top: 45px;
   overflow: hidden;
-  padding-top: 5px;
-  small {
-    float: left;
+  padding: 60px 0 10px;
+  .small {
     color: $navy;
+    float: left;
+    font-weight: bold;
     a {
       display: inline-block;
     }
     img {
       margin-right: 5px;
+      vertical-align: bottom;
+      width: 40px;
     }
     .hartl {
-      color: $lightblue;
+      color: white;
+      font-weight: normal;
       &:hover {
-        color: $dpink;
+        font-weight: bold;
         text-decoration: none;
       }
     }
   }
-  img {
-    width: 40px;
-    vertical-align: bottom;
-  }
   ul {
-    margin-top: 35px;
+    margin-top: 32px;
     float: right;
     list-style-type: none;
     li {
       float: left;
       margin-left: 15px;
       a {
-        color: $lightblue;
+        color: white;
         &:hover {
-          color: $dpink;
+          color: white;
+          font-weight: bold;
           text-decoration: none;
         }
       }
     }
   }
-}
-
-/* miscellaneous */
-
-.debug_dump {
-  @include box_sizing;
-  clear: both;
-  float: left;
-  margin-top: 45px;
-  width: 100%;
 }

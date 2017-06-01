@@ -15,7 +15,7 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
-      user: "User"
+      user: "Users"
       account: "Account"
       profile: "Profile"
       settings: "Settings"
@@ -57,6 +57,9 @@ en:
       logo: "Rails logo"
 
   users:
+    index:
+      all_user: "All users"
+
     new:
       signup: "Sign up"
       signup_desc: "This will be a signup page for new users"
@@ -69,6 +72,30 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       error: "Sign up failed!!!!"
+
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      confirm: "Confirmation"
+      save: "Save changes"
+      change: "Change"
+      edit_ava: "Edit your avatar:"
+      pls_login: "Please log in!"
+
+    update:
+      profile_updated: "Profile updated!"
+      update_fail: "Fail to update profile!"
+
+    user:
+      delete: "DELETE"
+      sure: "You sure?"
+
+    destroy:
+      user_deleted: "User deleted!"
+      fail_to_delete: "Fail to delete user!"
 
   shared:
     error_messages:
