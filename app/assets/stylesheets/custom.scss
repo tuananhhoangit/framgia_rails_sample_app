@@ -83,13 +83,26 @@ p {
   }
 }
 
-.navbar-right li {
-  a {
-    color: $lightblue;
-    font-weight: bold;
-    &:hover {
-      background-color: $navy;
-      color: $dpink;
+.navbar-right {
+  li {
+    a {
+      color: $lightblue;
+      font-weight: bold;
+      &:hover, &:focus, &:active {
+        background-color: $navy !important;
+        color: $dpink;
+      }
+    }
+  }
+  .dropdown-menu {
+    background-color: $navy;
+    li {
+      a {
+        &:hover {
+          background-color: $dpink !important;
+          color: white;
+        }
+      }
     }
   }
 }
@@ -109,6 +122,9 @@ p {
       }
     }
   }
+  label {
+    color: $navy;
+  }
   .btn-primary {
     background-color: $lightblue;
     border: $lightblue;
@@ -116,6 +132,17 @@ p {
     &:hover {
       background-color: $dpink;
       transition: all 0.3s linear;
+    }
+  }
+  p {
+    color: $navy;
+    margin-top: 10px;
+    a {
+      color: $lightblue;
+      text-decoration: none;
+      &:hover {
+        color: $dpink
+      }
     }
   }
 }
