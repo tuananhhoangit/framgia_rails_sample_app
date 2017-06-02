@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= link_to image_tag("rails.png", alt: t(".logo")),
+      "http://rubyonrails.org/" %> <%= t ".tut" %></a>
+    <%= t ".by" %> <a href="http://www.michaelhartl.com/"> <span class= "hartl">
+      <%= t ".hartl" %></span></a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t ".news" %></a></li>
+    </ul>
+  </nav>
+</footer>
