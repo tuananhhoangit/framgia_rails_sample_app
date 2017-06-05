@@ -3,8 +3,7 @@ en:
     footer:
       the: "The"
       ror_tut: "Ruby on Rails Tutorial"
-      tut: "<Tutorial></Tutorial>"
-      by: "by"
+      tut_by: "Tutorial by"
       hartl: "Michael Hartl"
       about: "About"
       contact: "Contact"
