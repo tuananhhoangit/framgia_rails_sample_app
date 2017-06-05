@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: $navy !important;
   font-size: 3em;
   font-weight: bold;
   letter-spacing: -2px;
@@ -88,24 +87,29 @@ p {
 }
 
 /* body */
-.desc h2 {
-  color: $lightblue;
-  .tut {
+.main {
+  h1 {
     color: $navy;
-    &:hover {
-      color: $dpink;
-      text-decoration: none;
+  }
+  .desc h2 {
+    color: $navy;
+    .tut {
+      color: $lightblue;
+      &:hover {
+        color: $dpink;
+        text-decoration: none;
+      }
     }
   }
-}
 
-.btn-primary {
-  background-color: $lightblue;
-  border: $lightblue;
-  transition: all 0.3s linear;
-  &:hover {
-    background-color: $dpink;
+  .btn-primary {
+    background-color: $lightblue;
+    border: $lightblue;
     transition: all 0.3s linear;
+    &:hover {
+      background-color: $dpink;
+      transition: all 0.3s linear;
+    }
   }
 }
 
@@ -119,19 +123,19 @@ footer {
   padding-top: 5px;
   small {
     float: left;
-    color: $lightblue;
+    color: $navy;
+    a {
+      display: inline-block;
+    }
+    img {
+      margin-right: 5px;
+    }
     .hartl {
-      color: $navy;
+      color: $lightblue;
       &:hover {
         color: $dpink;
         text-decoration: none;
       }
-    }
-  }
-  a {
-    color: $darker-gray;
-    &:hover {
-      color: $nblack;
     }
   }
   img {
