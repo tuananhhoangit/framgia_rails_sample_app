@@ -8,6 +8,7 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+      logo: "Ruby on Rails"
 
     header:
       sample_app: "sample app"
@@ -54,4 +55,17 @@ en:
     new:
       signup: "Sign up"
       signup_desc: "This will be a signup page for new users"
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      confirm: "Confirmation"
+      create: "Create my account"
 
+    create:
+      welcome: "Welcome to the Sample App!"
+      error: "Sign up failed!!!!"
+
+  shared:
+    error_messages:
+      contains: "The form contains"
+      error: "error"

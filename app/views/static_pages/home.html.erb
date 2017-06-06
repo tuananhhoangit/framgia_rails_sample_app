@@ -4,7 +4,7 @@
   <div class="desc">
     <h2>
       <%= t ".homepage" %>
-      <a class="tut" href="http://www.railstutorial.org/"><%= t ".ror_tut" %></a>
+      <%= link_to t(".ror_tut"), "http://www.railstutorial.org/", class: "tut" %>
       <%= t ".sample_app" %>
     </h2>
   </div>
