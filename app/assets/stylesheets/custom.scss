@@ -195,7 +195,7 @@ input {
   height: auto !important;
 }
 
-.error_explanation {
+.error-explanation {
   color: red;
   ul {
     margin-bottom: 30px;
@@ -207,6 +207,19 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin: -10px 0 10px;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+.session-remember-me {
+  margin-left: 0 !important;
+  width: auto;
 }
 
 /* footer */

@@ -82,6 +82,8 @@ en:
       pass: "Password"
       new_user: "New user?"
       signup_now: "Sign up now!"
+      remember_me: "Remember me on this computer"
 
     create:
-      invalid_login: "Invalid email/password combination"
+      invalid_login: "Invalid email/password combination!"
+      login_success: "Login success!"
