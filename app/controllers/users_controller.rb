@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: [:new, :show, :create]
   before_action :correct_user, only: [:edit, :update]
-  before_action :admin_user, only: :destroy
-  before_action :find_user, except: [:index, :new, :create]
+  before_action :verify_admin, only: :destroy
+  before_action :load_user, except: [:index, :new, :create]
 
   def index
     @users = User.select(:id, :name, :email).order(id: :asc)
@@ -53,10 +53,10 @@ class UsersController < ApplicationController
 
   private
 
-  def find_user
+  def load_user
     @user = User.find_by id: params[:id]
 
-    render file: "public/404.html", layout: false unless @user
+    valid_info @user
   end
 
   def user_params
@@ -77,7 +77,7 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user? @user
   end
 
-  def admin_user
+  def verify_admin
     redirect_to root_url unless current_user.is_admin?
   end
 end
