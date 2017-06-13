@@ -59,6 +59,7 @@ en:
   users:
     index:
       all_user: "All users"
+      pls_login: "Please log in!"
 
     new:
       signup: "Sign up"
@@ -84,7 +85,6 @@ en:
       save: "Save changes"
       change: "Change"
       edit_ava: "Edit your avatar:"
-      pls_login: "Please log in!"
 
     update:
       profile_updated: "Profile updated!"
@@ -111,6 +111,7 @@ en:
       new_user: "New user?"
       signup_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_pass: "(forgot password?)"
 
     create:
       invalid_login: "Invalid email/password combination!"
@@ -126,9 +127,31 @@ en:
       activate: "Activate"
 
     password_reset:
-      greeting: "Hi"
+      pass_reset: "Password reset"
+      instruction: "To reset your password click the link below:"
+      expire_time: "This link will expire in two hours."
+      ignore_email: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
 
   account_activations:
     edit:
       acc_activated: "Account activated!"
       invalid_link: "Invalid activation link!"
+
+  password_resets:
+    new:
+      forgot_pass: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    create:
+      email_reset_pass: "Email sent with password reset instructions"
+      email_not_found: "Email address not found!"
+    edit:
+      reset_pass: "Reset password"
+      pass: "Password"
+      confirm: "Confirmation"
+      update_pass: "Update password"
+    update:
+      empty: "can't be empty"
+      pass_reseted: "Password has been reset."
+      pass_reset_expired: "Password reset has expired."
+      reset_fail: "Fail to reset password!"
