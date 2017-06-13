@@ -203,6 +203,7 @@ main {
       text-decoration: none;
       &:hover {
         font-weight: bold;
+        text-shadow: 0 0 10px;
       }
     }
     .user-name {
@@ -238,6 +239,12 @@ aside {
       margin-bottom: 3px;
       margin-top: 0;
       text-align: left;
+    }
+    .upload-picture {
+      margin-top: 10px;
+      input {
+        border: none;
+      }
     }
   }
 }
@@ -288,6 +295,63 @@ input {
 .session-remember-me {
   margin-left: 0 !important;
   width: auto;
+}
+
+/* micropost */
+.title {
+  color: white;
+}
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    border-top: 1px solid $lightblue;
+    overflow: hidden;
+    padding: 10px;
+    .post_img {
+      img {
+        max-height: 300px;
+        padding-top: 10px;
+        width: auto;
+      }
+    }
+    .user {
+      margin-top: 5em;
+      padding-top: 0;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          font-weight: bold;
+          text-shadow: 0 0 10px;
+        }
+      }
+    }
+    .content {
+      color: $navy;
+      display: block;
+      margin-left: 60px;
+      img {
+        display: block;
+        padding: 5px 0;
+      }
+    }
+    .timestamp {
+      color: $navy;
+      display: block;
+      font-size: 12px;
+      font-style: italic;
+      margin-left: 60px;
+      padding-top: 10px;
+    }
+    .avatar {
+      float: left;
+      margin: 5px 10px 0 0;
+      &:hover {
+        box-shadow: 0 0 20px white;
+      }
+    }
+  }
 }
 
 /* footer */
