@@ -55,6 +55,7 @@ en:
       sample_app: sample application
       signup_now: "Sign up now!"
       logo: "Rails logo"
+      micropost_feed: "Micropost Feed"
 
   users:
     index:
@@ -69,6 +70,9 @@ en:
       pass: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+
+    show:
+      microposts: "Microposts"
 
     create:
       welcome: "Welcome to the Sample App!"
@@ -102,6 +106,12 @@ en:
     error_messages:
       contains: "The form contains"
       error: "error"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose_new: "Compose new micropost..."
+      post: "Post"
 
   sessions:
     new:
@@ -155,3 +165,17 @@ en:
       pass_reseted: "Password has been reset."
       pass_reset_expired: "Password reset has expired."
       reset_fail: "Fail to reset password!"
+
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      delete: "Delete"
+      you_sure: "You sure?"
+      del_micropost_fail: "Fail to delete micropost!"
+    create:
+      micropost_created: "Micropost created"
+      fail_to_create: "Fail to create new post"
+      max_file_size: "Maximum file size is 5MB. Please choose a smaller file!"
+    destroy:
+      micropost_deleted: "Micropost deleted"

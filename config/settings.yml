@@ -8,3 +8,9 @@ user:
   avatar_url: "https://en.gravatar.com/userimage/122389688/b22d9e4c2ece9eb07732561028910ea8.jpeg"
 password:
   expired_time: 2
+micropost:
+  max_length: 140
+  picture_size: 5
+  post_per_page: 10
+  number_of_users: 6
+  lorem_sentences: 5
