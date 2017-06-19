@@ -102,16 +102,34 @@ en:
       user_deleted: "User deleted!"
       fail_to_delete: "Fail to delete user!"
 
+    show_follow:
+      view_profile: "View my profile"
+      microposts: "Microposts"
+
+    follow:
+      follow: "Follow"
+
+    following:
+      following: "Following"
+
+    followers:
+      followers: "Followers"
+
+  unfollow: "Unfollow"
+
   shared:
     error_messages:
       contains: "The form contains"
       error: "error"
     user_info:
-      view_profile: "view my profile"
-      micropost: "micropost"
+      view_profile: "View my profile"
+      micropost: "Micropost"
     micropost_form:
       compose_new: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: following
+      followers: followers
 
   sessions:
     new:

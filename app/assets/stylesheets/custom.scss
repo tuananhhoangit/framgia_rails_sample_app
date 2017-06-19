@@ -132,7 +132,7 @@ main {
   label {
     color: $navy;
   }
-  .forgot_pass {
+  .forgot-pass {
     color: white;
   }
   .btn-primary {
@@ -154,6 +154,10 @@ main {
         color: $dpink
       }
     }
+  }
+  .avatar {
+    float: left;
+    margin-right: 10px;
   }
   .avatar-edit {
     margin-top: 10px;
@@ -194,10 +198,11 @@ main {
 .users {
   list-style: none;
   margin: 0;
+  padding: 0;
   li {
-    border-bottom: 1px solid $lightblue;
+    border-top: 1px solid $lightblue;
     overflow: auto;
-    padding: 10px 0;
+    padding: 10px;
     a {
       color: white;
       text-decoration: none;
@@ -220,6 +225,54 @@ main {
 aside {
   .user-info {
     margin-top: 20px;
+    .profile-link {
+      color: white !important;
+      display: inline-block;
+      margin: 5px 0 10px;
+      text-decoration: none;
+      &:hover {
+        text-shadow: 0 0 15px white;
+      }
+    }
+    .total-microposts {
+      color: $navy;
+    }
+  }
+  .stats {
+    margin-top: 0;
+    overflow: auto;
+    padding: 0;
+    a {
+      color: white;
+      float: left;
+      padding: 0 10px;
+      &:first-child {
+        border: 0;
+        padding-left: 0;
+      }
+      &:hover {
+        text-decoration: none;
+        text-shadow: 0 0 15px white;
+      }
+    }
+    strong {
+      display: block;
+      text-align: center;
+    }
+  }
+  .user-avatars {
+    clear: both;
+    overflow: auto;
+    padding-top: 10px;
+    .avatar {
+      margin: 1px;
+    }
+    a {
+      padding: 0;
+    }
+  }
+  .users.follow {
+    padding: 0;
   }
   section {
     margin-top: 20px;
@@ -236,8 +289,7 @@ aside {
     h1 {
       font-size: 1.4em;
       letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0;
+      margin: 0 0 5px;
       text-align: left;
     }
     .upload-picture {
@@ -247,15 +299,6 @@ aside {
       }
     }
   }
-}
-
-.avatar {
-  float: left;
-  margin-right: 10px;
-}
-
-.avatar_edit {
-  margin-top: 15px;
 }
 
 /* form */
@@ -308,7 +351,7 @@ input {
     border-top: 1px solid $lightblue;
     overflow: hidden;
     padding: 10px;
-    .post_img {
+    .post-img {
       img {
         max-height: 300px;
         padding-top: 10px;
